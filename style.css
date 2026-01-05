@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #7a1ea1, #2a63bc);
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+header p {
+  margin: 0 0 1rem;
+}
+
+.btn-download {
+  background: linear-gradient(90deg, #f953c6, #5b79f7);
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(249, 83, 198, 0.6);
+  transition: 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-download:hover {
+  box-shadow: 0 0 30px rgba(91, 121, 247, 0.9);
+  transform: scale(1.05);
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 0 1rem;
+}
+
+section {
+  background: rgba(255 255 255 / 0.12);
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+h2, h3 {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+p, li {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+ul {
+  padding-left: 1.3rem;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill {
+  background: rgba(255 255 255 / 0.15);
+  padding: 0.6rem 1.3rem;
+  border-radius: 30px;
+  font-weight: 600;
+  min-width: 80px;
+  text-align: center;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project {
+  background: rgba(255 255 255 / 0.15);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.project h4 {
+  margin: 0 0 0.5rem 0;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 0.4rem 0;
+}
+
+.contact-info a {
+  color: #f953c6;
+  text-decoration: none;
+}
+
+.contact-info a.github {
+  color: #5b79f7;
+}
+
+
+@media (max-width: 600px) {
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+nav {
+  background: rgba(0 0 0 / 0.5);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f953c6;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4; /* Optional: add a background */
+}
+
+.resume-image {
+  margin: 30px 0;
+}
+
+.resume-image h3 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.resume-img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.resume-img:hover {
+  transform: scale(1.02);
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+}
